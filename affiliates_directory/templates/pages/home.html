@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row categories_block">
+        {% for adv_category in advcat_list %}
+            <span class="adv_category">
+                {% if adv_category.image %}<img height="30px" width="30px" src="{{ adv_category.image.url }}" class="adv_category_img">{% endif %}
+                {{ adv_category }}
+            </span>
+        {% endfor %}
+    </div>
+{% endblock %}

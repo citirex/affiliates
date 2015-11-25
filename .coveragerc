@@ -1,0 +1,5 @@
+[run]
+include = affiliates_directory/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
